@@ -2,11 +2,12 @@
   <div>
     {{ aprop  }}
     {{ foo  }}
+    {{ callMeAndGetAString(1) }}
     <Tutorial />
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import Vue from 'vue'
 import Tutorial from '../components/Tutorial.vue'
 
@@ -22,6 +23,15 @@ export default Vue.extend({
   data() {
     return {
       foo: 'foo'
+    }
+  },
+  methods: {
+    /**
+     * @param {number} arg
+     * @return {string}
+     */
+    callMeAndGetAString(arg) {
+      return String(arg) + 'xxx';
     }
   },
   mounted() {

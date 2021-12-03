@@ -11,7 +11,7 @@
 import Vue from 'vue'
 import Tutorial from '../components/Tutorial.vue'
 
-export default Vue.extend({
+export default {
   components: {
     Tutorial
   },
@@ -37,5 +37,5 @@ export default Vue.extend({
   mounted() {
     this.foo // string
   }
-})
+}
 </script>

@@ -3,7 +3,7 @@
     {{ aprop  }}
     {{ foo  }}
     {{ callMeAndGetAString(1) }}
-    <Tutorial />
+    <Tutorial :test="'asdfds'" />
   </div>
 </template>
 

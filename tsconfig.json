@@ -13,6 +13,7 @@
     "sourceMap": true,
     "strict": true,
     "noEmit": true,
+    "jsx": "preserve",
     "experimentalDecorators": true,
     "baseUrl": ".",
     "paths": {
@@ -35,6 +36,7 @@
   ],
   "vueCompilerOptions": {
     "experimentalCompatMode": 2,
+    "experimentalImplicitWrapComponentOptionsWithDefineComponent": true,
     "experimentalTemplateCompilerOptions": {
       "compatConfig": { "MODE": 2 } // optional
     }

@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import Vue from 'vue'
 import Tutorial from '../components/Tutorial.vue'
 
 export default {
@@ -19,6 +18,9 @@ export default {
     aprop: {
       type: Number,
     }
+  },
+  async asyncData(context) {
+    context.redirect('https://google.com');
   },
   data() {
     return {

@@ -3,17 +3,13 @@
     {{ aprop  }}
     {{ foo  }}
     {{ callMeAndGetAString(1) }}
-    <Tutorial :test="'asdfds'" />
+    <tutorial :test="'asdfds'" />
+    <nuxt-logo></nuxt-logo>
   </div>
 </template>
 
 <script>
-import Tutorial from '../components/Tutorial.vue'
-
 export default {
-  components: {
-    Tutorial
-  },
   props: {
     aprop: {
       type: Number,
@@ -27,6 +23,12 @@ export default {
       foo: 'foo'
     }
   },
+  // Uncommenting the following object makes template types work.
+  // computed: {
+  //   xxx() {
+  //     return true;
+  //   },
+  // },
   methods: {
     /**
      * @param {number} arg

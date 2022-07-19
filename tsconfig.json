@@ -35,10 +35,7 @@
     "dist"
   ],
   "vueCompilerOptions": {
-    "experimentalCompatMode": 2,
-    "experimentalImplicitWrapComponentOptionsWithDefineComponent": true,
-    "experimentalTemplateCompilerOptions": {
-      "compatConfig": { "MODE": 2 } // optional
-    }
+    "strictTemplates": true,
+    "target": 2,
   }
 }

@@ -36,6 +36,7 @@
   ],
   "vueCompilerOptions": {
     "strictTemplates": true,
-    "target": 2,
+    // "experimentalComponentOptionsWrapperEnable": true,
+    "target": 2.7,
   }
 }

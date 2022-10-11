@@ -1,9 +1,16 @@
 <template>
-    <div aria-live="polite"></div>
+  <div aria-live="polite">
+    <div>{{ computedProp }}</div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'Index',
+  name: 'Index',
+  computed: {
+    computedProp() {
+      return 'foo'
+    },
+  },
 }
 </script>

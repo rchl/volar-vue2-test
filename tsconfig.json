@@ -8,30 +8,15 @@
     "sourceMap": false,
     "strict": true,
     "noEmit": true,
-    "jsx": "preserve",
     "baseUrl": ".",
-    "paths": {
-      "~/*": [
-        "./*"
-      ],
-      "@/*": [
-        "./*"
-      ]
-    },
     "lib": [
       "ESNext",
       "ESNext.AsyncIterable",
       "DOM"
     ],
-    "types": []
   },
-  "exclude": [
-    "node_modules",
-    ".nuxt",
-    "dist"
-  ],
   "vueCompilerOptions": {
     "strictTemplates": true,
-    "target": 2.7,
+    "target": 3
   }
 }

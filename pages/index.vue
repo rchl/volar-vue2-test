@@ -1,6 +1,5 @@
 <template>
   <div aria-live="polite">
-    <div class="some-class">{{ computedProp }}</div>
     <div>{{ items }}</div>
   </div>
 </template>
@@ -9,22 +8,11 @@
 export default {
   name: 'Index',
   props: {
-    /** @type {import('vue').PropOptions<number[]>} */
+    /** @type {import('vue').Prop<number[], [1, 2, 3]>} */
     items: {
       type: Array,
       default: () => [1, 2, 3]
     }
   },
-  computed: {
-    computedProp() {
-      return 'foo'
-    },
-  },
 }
 </script>
-
-<style scoped>
-.some-class {
-  color: blue;
-}
-</style>

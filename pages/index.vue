@@ -1,6 +1,6 @@
 <template>
   <div aria-live="polite">
-    <div>{{ computedProp }}</div>
+    <div class="some-class">{{ computedProp }}</div>
   </div>
 </template>
 
@@ -14,3 +14,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.some-class {
+  color: blue;
+}
+</style>

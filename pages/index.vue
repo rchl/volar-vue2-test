@@ -1,6 +1,6 @@
 <template>
-  <div aria-live="polite">
-    <div>{{ items }}</div>
+  <div>
+    <div v-for="item in items">{{ item }} of {{ items.length }}</div>
   </div>
 </template>
 

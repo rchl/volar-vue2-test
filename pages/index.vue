@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="item in items">{{ item }} of {{ items.length }}</div>
+    <div class="test" v-for="item in items">{{ item }} of {{ items.length }}</div>
   </div>
 </template>
 
@@ -16,3 +16,8 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.test {
+  color: red;
+}

@@ -14,6 +14,11 @@ export default {
       default: () => [1, 2, 3]
     }
   },
+  computed: {
+    foo() {
+      return this.xxx
+    },
+  },
 }
 </script>
 

@@ -8,8 +8,8 @@
 export default {
   name: 'Index',
   props: {
-    /** @type {import('vue').PropOptions<number[]>} */
     items: {
+      /** @type {import('vue').PropType<number[]>} */
       type: Array,
       default: () => [1, 2, 3]
     }
